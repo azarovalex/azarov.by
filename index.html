@@ -26,7 +26,7 @@ body { margin: 0; padding: 0; }
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [27.5541108,53.8955903],
-        zoom: 4
+        zoom: 4.5
     });
 
     map.on('load', () => {
@@ -42,7 +42,7 @@ body { margin: 0; padding: 0; }
                         'type': 'Feature',
                         'properties': {
                             'description':
-                                '<strong>Coffee&Code Minsk</strong><p><a href="https://t.me/coffeeCodeEverywhere/72" target="_blank" title="Opens in a new window">Очередная встреча</a> разработчиков и участников чата в формате дружеской беседы! Конкретного плана на этот раз нет, но, как всегда, скучно не будет :з 11:00-15:00 p.m.</p>',
+                                '<strong>Coffee&Code Минск</strong><p><a href="https://t.me/coffeeCodeEverywhere/72" target="_blank" title="Opens in a new window">Очередная встреча</a> разработчиков и участников чата в формате дружеской беседы! Конкретного плана на этот раз нет, но, как всегда, скучно не будет :з 11:00-15:00 p.m.</p>',
                             'icon': 'rocket-15'
                         },
                         'geometry': {
@@ -74,6 +74,30 @@ body { margin: 0; padding: 0; }
                             'coordinates': [30.5191062, 50.4473481]
                         }
                     },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Coffee&Code Питер</strong><p>Пообщаемся на технические темы, обсудим интересные события из мобильной разработки, разберем несколько вопросов с собеседований и поделимся опытом! <a href="https://t.me/coffeeCodeEverywhere/70" target="_blank" title="Opens in a new window">Подробнее</a></p>',
+                            'icon': 'rocket-15'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [30.3166144,59.969778]
+                        }
+                    },
+                    {
+                        'type': 'Feature',
+                        'properties': {
+                            'description':
+                                '<strong>Coffee&Code Москва</strong><p>Осень окончательно вступила в свои права. И в эту промозглую пору будет приятно провести в к теплой компании  разработчиков и участников чата в за кружкой ароматного кофе. Поговорим о мобильной разработке, хороших практиках обучения и ресурсах для этого, обсудим волнующие всех вопросы, всё это в дружеской атмосфере со вкусным кофе.<a href="https://t.me/coffeeCodeEverywhere/69" target="_blank" title="Opens in a new window">Подробнее</a></p>',
+                            'icon': 'rocket-15'
+                        },
+                        'geometry': {
+                            'type': 'Point',
+                            'coordinates': [37.633285,55.757714]
+                        }
+                    },
                 ]
             }
         });
@@ -84,7 +108,8 @@ body { margin: 0; padding: 0; }
             'source': 'places',
             'layout': {
                 'icon-image': '{icon}',
-                'icon-allow-overlap': true
+                'icon-allow-overlap': true,
+                'icon-size': 2
             }
         });
 
